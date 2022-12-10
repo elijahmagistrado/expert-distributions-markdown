@@ -1,11 +1,9 @@
 ---
-title: "Using expert distribution maps for "
+title: "Visualising occurrence records against expert distribution maps"
 author: "Elijah Magistrado"
 date: "2022-11-18"
 output: html_document
 ---
-
-# Visualising occurrence records against expert distribution maps
 
 The geographic distribution of a species can tell us a lot of information, such as climatic tolerances, adaptability, and dispersal capability. Species distributions are commonly represented as points on a map showing individual occurrence records. While these are great, occurrence records often have outliers that are found in unreasonable locations for a given species. But how would we determine which occurrence records are "unreasonable" apart from the obvious (i.e., Koalas in the Pacific Ocean).
 
@@ -31,7 +29,11 @@ library(leaflet)
 
 To use galah, we must add our email used to register for our ALA account.
 
-```{r}
+```{r, include=FALSE}
+galah_config(email = "elijah.magi28@gmail.com")
+```
+
+```{r, eval = FALSE}
 galah_config(email = "hungry_wombat@email.com")
 ```
 
